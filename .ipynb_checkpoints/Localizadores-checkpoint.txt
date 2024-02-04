@@ -1,0 +1,19 @@
+Uso de Actionchains:
+O 'Actionchains' é uma classe no Selenium WebDriver que fornece uma maneira de realizar ações complexas, como movimentos do mouse, cliques duplos, arrastar e soltar, entre outras.
+
+Desafios:
+Optei por usar 'Actionchains' devido a dificuldade em interagir com elementos da página para login com abordagens mais diretas.Alguns sites utilizam técnicas mais dinâmicas o que pode tornar a automação mais desafiadora para iniciantes.
+A página da shopee possui características específica, como elementos dinâmicos, manipulação de eventos e uma estrutura complexa do DOM (pelo menos para iniciantes). Ferramentas de automação geralmente dependem de identificadores estáveis, de conseguir localizar elementos usando seletores XPath ou CSS, o que pode ser dasafiador se eles estiverem aninhados no DOM (Modelo de Objeto de Documento), sempre é necessário esperar por esses elementos antes de interagir com eles, além de outros eventos assíncronos ocorrendo antes de iniciar a funcionalidade.
+
+Solução:
+Técnicas como movimento do mouse simulado ajudaram a contornar as dificuldades em interagir diretamente com os elementos da página. Sabemos que abordagens diretas, como a localização de elementos por seletores específicos, podem ser mais estáveis e que movimentos simulados do mouse podem introduzir atrasos desnecessários (como ocorreu na aplicação), além disso podem haver ambientes de execução que não suportam interações simuladas do mouse da mesma maneira que outros.
+
+Localizadores:
+
+Xpath botão 'Rejeitar cookies': //*[@id="main"]/div/div[5]/div/div[3]/button[2]
+
+xpath botão 'entrar': //*[@id="main"]/div/div[2]/div/div/div/div[2]/div/div[2]/form/button
+
+Xpath campo de email: //*[@id="main"]/div/div[2]/div/div/div/div[2]/div/div[2]/form/div[1]/div[1]/input
+
+Xpath campo senha: //*[@id="main"]/div/div[2]/div/div/div/div[2]/div/div[2]/form/div[2]/div[1]/input 
