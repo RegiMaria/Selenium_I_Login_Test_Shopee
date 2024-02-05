@@ -26,3 +26,8 @@ Python
 
 Getting Started with Selenium! Let's log in to the Shopee website! Come and see!
 
+Please, read the Wki!
+https://github.com/RegiMaria/Selenium_I_Login_Test_Shopee.wiki.git
+
+Selenium documentation:
+https://www.selenium.dev/documentation/
